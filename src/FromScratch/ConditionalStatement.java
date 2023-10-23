@@ -14,8 +14,17 @@ public class ConditionalStatement {
             }
             j++;
         }
-       // int k = 10;
-        //switch ()
-        //verify
+        int k = 1;
+        switch (k) {
+            case 10:
+                System.out.println("it is 10");
+                break;
+            case 20:
+                System.out.println("it is 20");
+                break;
+            default:
+                System.out.println("default value");
+                break;
+        }
     }
 }

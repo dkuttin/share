@@ -1,6 +1,7 @@
 package com.java.training.oops;
 
 import java.util.Objects;
+import java.util.*;
 
 class Person {
 
@@ -70,6 +71,16 @@ public class TestPerson {
             System.out.println("same");
         }else{
             System.out.println("not same");
+        }
+
+        HashMap<String, Person> personHashMap = new HashMap<>();
+            personHashMap.put(person1.getLastName(), person1);
+            personHashMap.put(person2.getLastName(), person2);
+
+            for (String key : personHashMap.keySet()){
+                Person person = personHashMap.get(key);
+                System.out.println(person.getFirstName());
+
         }
 
     }
